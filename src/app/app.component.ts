@@ -37,7 +37,7 @@ export class AppComponent {
     const item = event.previousContainer.data[event.previousIndex];
     this.store.firestore.runTransaction(() => {
       return Promise.all([
-        this.store.collection(event.previousContainer.id).doc(item.id).delete,
+        this.store.collection(event.previousContainer.id).doc(item.id).delete(),
         this.store.collection(event.container.id).add(item),
       ]);
     });
@@ -48,6 +48,7 @@ export class AppComponent {
       event.currentIndex
     );
   }
+
   edit(list: 'done' | 'todo' | 'inProgress', task: Task): void {
     const dialogRef = this.dialog.open(TaskDialogComponent, {
       width: '270px',
