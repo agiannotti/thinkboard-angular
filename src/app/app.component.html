@@ -6,7 +6,7 @@
 <!-- <app-task *ngFor="let task of todo" [task]="task"></app-task> -->
 
 <div class="content-wrapper">
-  <button mat-button (click)="newTask()"></button>
+  <button mat-button (click)="newTask()">
     <mat-icon>Add</mat-icon>Add Task
   </button>
   <div class="container-wrapper">
@@ -38,7 +38,7 @@
         #inProgressList="cdkDropList"
         [cdkDropListData]="inProgress"
         (cdkDropListDropped)="drop($event)"
-        [cdkDropListConnectedTo]="[toDoList, doneList]"
+        [cdkDropListConnectedTo]="[todoList, doneList]"
       >
         >
         <p class="empty-label" *ngIf="inProgress.length === 0">Empty list</p>

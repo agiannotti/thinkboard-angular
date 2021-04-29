@@ -9,5 +9,6 @@
 </mat-form-field>
 
 <div mat-dialog-options>
-  <button mat-button [mat-dialog-close]="{ task: data.task }"></button>
+  <button mat-button [mat-dialog-close]="{ task: data.task }">OK</button>
+  <button mat-button (click)="cancel()">Cancel</button>
 </div>
