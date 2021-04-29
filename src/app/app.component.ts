@@ -44,7 +44,24 @@ export class AppComponent {
       event.currentIndex
     );
   }
-  edit(list: string, task: Task): void {}
+  edit(list: 'done' | 'todo' | 'inProgress', task: Task): void {
+    const dialogRef = this.dialog.open(TaskDialogComponent, {
+      width: '270px',
+      data: {
+        task,
+        enableDelete: true,
+      },
+    });
+    dialogRef.afterClosed().subscribe((result: TaskDialogResult) => {
+      const dataList = this[list];
+      const taskIndex = dataList.indexOf(task);
+      if (result.delete) {
+        dataList.splice(taskIndex, 1);
+      } else {
+        dataList[taskIndex] = task;
+      }
+    });
+  }
 
   newTask() {
     const dialogRef = this.dialog.open(TaskDialogComponent, {

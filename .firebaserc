@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "thinkboard-d8d22": {
+      "hosting": {
+        "thinkboard-angular": [
+          "thinkboard-d8d22"
+        ]
+      }
+    }
+  }
+}
