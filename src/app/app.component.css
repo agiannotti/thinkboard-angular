@@ -6,6 +6,10 @@ mat-toolbar > span {
   margin-left: 20px;
 }
 
+mat-card {
+  background-color: #ccc;
+}
+
 .content-wrapper {
   max-width: 1400px;
   margin: auto;
@@ -30,6 +34,7 @@ app-new-task {
   margin-bottom: 30px;
 }
 .empty-label {
+  color: #424242;
   font-size: 2em;
   padding-top: 10px;
   text-align: center;
