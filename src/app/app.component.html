@@ -40,7 +40,6 @@
         (cdkDropListDropped)="drop($event)"
         [cdkDropListConnectedTo]="[todoList, doneList]"
       >
-        >
         <p class="empty-label" *ngIf="inProgress.length === 0">Empty list</p>
 
         <app-task
@@ -62,7 +61,6 @@
         (cdkDropListDropped)="drop($event)"
         [cdkDropListConnectedTo]="[inProgressList, todoList]"
       >
-        >
         <p class="empty-label" *ngIf="done.length === 0">Empty list</p>
 
         <app-task
