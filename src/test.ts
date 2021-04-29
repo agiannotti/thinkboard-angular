@@ -14,7 +14,7 @@ declare const require: {
     filter?: RegExp
   ): {
     keys(): string[];
-    <T>(id: any): T;
+    <T>(id: string): T;
   };
 };
 
