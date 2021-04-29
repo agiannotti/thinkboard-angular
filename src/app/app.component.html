@@ -6,7 +6,11 @@
 <!-- <app-task *ngFor="let task of todo" [task]="task"></app-task> -->
 
 <div class="content-wrapper">
+  <button mat-button (click)="newTask()"></button>
+    <mat-icon>Add</mat-icon>Add Task
+  </button>
   <div class="container-wrapper">
+    <button class="mat-button"></button>
     <div class="container">
       <h2>Todo</h2>
       <mat-card
