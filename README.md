@@ -3,7 +3,9 @@
 ```
 
 
-## Users can add tasks, and double click items to edit and update information. Users can drag and drop tasks between Todo, In progress, and Done components. 
+## Users can add tasks, and double click items to edit and update information.
+
+## Users can drag and drop tasks between Todo, In progress, and Done components. 
 
 Client + Server:
 
