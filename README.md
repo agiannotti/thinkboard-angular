@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # ThinkBoard
 
 
@@ -16,4 +14,3 @@ Client + Server:
 • Hosted and deployed via FireBase
 
 • Provisioned via FireStore realtime database
->>>>>>> d458c3595086fc6ca5042f33d3059ae39dce659d
